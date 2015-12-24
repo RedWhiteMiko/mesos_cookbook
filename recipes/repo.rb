@@ -39,5 +39,6 @@ when 'rhel'
     description 'Mesosphere Packages for Enteprise Linux'
     baseurl "http://repos.mesosphere.io/el/#{version}/$basearch/"
     gpgkey 'https://repos.mesosphere.io/el/RPM-GPG-KEY-mesosphere'
+    proxy node['mesos']['repo_proxy']
   end
 end

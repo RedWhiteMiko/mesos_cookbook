@@ -3,6 +3,7 @@ default['java']['jdk_version'] = '7'
 
 # Use Mesosphere repo
 default['mesos']['repo']       = true
+default['mesos']['repo_proxy'] = nil
 
 # Mesosphere Mesos version.
 default['mesos']['version']    = '0.25.0'
